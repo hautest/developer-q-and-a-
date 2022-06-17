@@ -11,7 +11,7 @@ function Home() {
       <div className={titleStyle}>DEVELOPER Q&A</div>
       <Link href="/quiz">
         <a>
-          <Button size="lg">시작하기</Button>
+          <Button size="lg">Quiz 시작하기</Button>
         </a>
       </Link>
       <Link href="/showAllQAndA">
