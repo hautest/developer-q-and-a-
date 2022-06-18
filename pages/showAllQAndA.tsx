@@ -1,26 +1,31 @@
-import { useEffect, useState } from "react";
+import { useState, ReactNode } from "react";
 import { qAndAData } from "../qAndAData";
 
-import { showAllQAndABox, qAndABox } from "../styles/showAllQandA.css";
+import {
+  showAllQAndABox,
+  qAndABox,
+  lineColor,
+  flexCenter,
+  baseListStyle,
+} from "../styles/showAllQandA.css";
 import Button from "../components/Button/Button";
+import { checkStorage } from "../utils/localStorage/checkStorage";
 
-interface dataInterface {
-  q: string;
-  a: string;
-  id: number;
+interface ListProps<T> {
+  list: T[];
+  renderItem: (value: T, index: number) => ReactNode;
+  className?: string;
+}
+
+function List<T>({ list, renderItem, className }: ListProps<T>) {
+  return (
+    <ul className={`${baseListStyle} ${className}`}>{list.map(renderItem)}</ul>
+  );
 }
 
 export default function ShowAllQAndA() {
   const [toggle, setToggle] = useState(false);
-  const [checkedQAndAArray, setCheckedQAndAArray] = useState([]);
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const localStorageData = localStorage.getItem("check");
-      if (typeof localStorageData === "string") {
-        setCheckedQAndAArray(JSON.parse(localStorageData));
-      }
-    }
-  }, []);
+
   const hadleToggle = () => {
     setToggle((prev) => !prev);
   };
@@ -28,24 +33,19 @@ export default function ShowAllQAndA() {
   return (
     <main className={showAllQAndABox}>
       <Button onClick={hadleToggle} size="lg">
-        {toggle ? "전체보기" : "체크한것만 보기"}{" "}
+        {toggle ? "전체보기" : "체크한것만 보기"}
       </Button>
-      {!toggle &&
-        qAndAData.map((arr) => (
-          <div className={qAndABox} key={arr.id}>
-            <div>{arr.q}</div>
-            <hr />
-            <div>{arr.a}</div>
-          </div>
-        ))}
-      {toggle &&
-        checkedQAndAArray.map((arr: dataInterface) => (
-          <div className={qAndABox} key={arr.id}>
-            <div>{arr.q}</div>
-            <hr />
-            <div>{arr.a}</div>
-          </div>
-        ))}
+      <List
+        className={flexCenter}
+        list={toggle ? Object.values(checkStorage.get() ?? {}) : qAndAData}
+        renderItem={({ question, answer }) => (
+          <li className={qAndABox} key={answer}>
+            <div>{question}</div>
+            <hr className={lineColor} />
+            <div>{answer}</div>
+          </li>
+        )}
+      />
     </main>
   );
 }
