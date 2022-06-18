@@ -3,7 +3,12 @@ import { ReactNode } from "react";
 import Link from "next/link";
 
 import { themeClass } from "../../styles/theme.css";
-import { globalLayoutStyle, navBox, childrenBox } from "./GlobalLayout.css";
+import {
+  globalLayoutStyle,
+  navBox,
+  childrenBox,
+  homeButtonBox,
+} from "./GlobalLayout.css";
 
 interface GlobalLayoutProps {
   children: ReactNode;
@@ -12,8 +17,8 @@ interface GlobalLayoutProps {
 export default function GlobalLayout({ children }: GlobalLayoutProps) {
   return (
     <div className={`${themeClass} ${globalLayoutStyle}`}>
-      <div className={navBox}>
-        <div>
+      <header className={navBox}>
+        <nav className={homeButtonBox}>
           <Link href="/">
             <a>
               <Image
@@ -21,13 +26,12 @@ export default function GlobalLayout({ children }: GlobalLayoutProps) {
                 width="30px"
                 height="30px"
                 src="/home.png"
-                style={{ cursor: "pointer" }}
               />
             </a>
           </Link>
-        </div>
-      </div>
-      <div className={childrenBox}>{children}</div>
+        </nav>
+      </header>
+      <main className={childrenBox}>{children}</main>
     </div>
   );
 }

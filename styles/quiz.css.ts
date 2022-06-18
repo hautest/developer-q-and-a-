@@ -15,7 +15,8 @@ export const qAndACard = style({
   width: "80%",
   height: "50vh",
   backgroundColor: vars.colors.white,
-  padding: vars.spacing.sm,
+  padding: vars.spacing.lg,
+  borderRadius: vars.spacing.md,
   display: "flex",
   alignItems: "center",
 });

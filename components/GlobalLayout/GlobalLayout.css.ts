@@ -22,3 +22,10 @@ export const childrenBox = style({
   justifyContent: "center",
   alignItems: "center",
 });
+
+export const homeButtonBox = style({
+  marginLeft: "3%",
+  display: "flex",
+  alignItems: "center",
+  cursor: "pointer",
+});

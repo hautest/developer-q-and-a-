@@ -1,4 +1,3 @@
-import { createSprinkles, defineProperties } from "@vanilla-extract/sprinkles";
 import { style, styleVariants } from "@vanilla-extract/css";
 
 import { vars } from "../../styles/theme.css";
