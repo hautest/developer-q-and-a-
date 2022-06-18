@@ -17,5 +17,8 @@ export const navBox = style({
 });
 
 export const childrenBox = style({
-  height: "95vh",
+  minHeight: "95vh",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
 });

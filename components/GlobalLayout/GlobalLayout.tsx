@@ -15,16 +15,17 @@ export default function GlobalLayout({ children }: GlobalLayoutProps) {
       <div className={navBox}>
         <div>
           <Link href="/">
-            <Image
-              alt="홈이미지"
-              width="30px"
-              height="30px"
-              src="/home.png"
-              style={{ cursor: "pointer" }}
-            />
+            <a>
+              <Image
+                alt="홈이미지"
+                width="30px"
+                height="30px"
+                src="/home.png"
+                style={{ cursor: "pointer" }}
+              />
+            </a>
           </Link>
         </div>
-        <div>toggleMode버튼</div>
       </div>
       <div className={childrenBox}>{children}</div>
     </div>
