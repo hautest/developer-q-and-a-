@@ -19,7 +19,6 @@ function Home() {
           <Button size="lg">Q&A한번에보기</Button>
         </a>
       </Link>
-      <Button size="lg">설명서</Button>
     </div>
   );
 }
