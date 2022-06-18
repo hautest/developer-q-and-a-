@@ -1,5 +1,3 @@
-import { useRouter } from "next/router";
-
 import { homeStyle, titleStyle } from "../styles/index.css";
 import { themeClass } from "../styles/theme.css";
 import Button from "../components/Button/Button";
