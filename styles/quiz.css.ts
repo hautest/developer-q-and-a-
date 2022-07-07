@@ -8,6 +8,7 @@ export const quizBox = style({
   justifyContent: "center",
   alignItems: "center",
   gap: "30px",
+  width: "100%",
   height: "100%",
 });
 
@@ -18,6 +19,7 @@ export const qAndACard = style({
   padding: vars.spacing.lg,
   borderRadius: vars.spacing.md,
   display: "flex",
+  justifyContent: "center",
   alignItems: "center",
 });
 
