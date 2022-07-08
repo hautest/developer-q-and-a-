@@ -1,4 +1,4 @@
-# www.naver.com을 입력하면 일어나는 일
+export const answer4 = `# www.naver.com을 입력하면 일어나는 일
 
 1. 사용자가 브라우저에 도메인 네임을 입력한다 (www.naver.com)
 2. 사용자가 입력한 URL 주소 중 도메인 네임 부분을 DNS 서버에 검색, DNS서버에서 도메인 네임에 해당하는 IP주소를 찾아 사용자가 입력한 URL 정보와 함께 전달한다
@@ -7,7 +7,6 @@
 5. 검색된 데이터는 HTTP 프로토콜을 사용하여 HTTP 응답 메세지를 생성 후 TCP 프로토콜을 사용하여 인터넷을 거쳐 원래 컴퓨터로 전송된다
 6. 도착한 HTTP 응답 메세지는 HTTP프로토콜을 사용하여 웹 페이지 데이터로 변환되어 웹 브라우저에 의해 출력되어 사용자가 볼 수 있게 된다
 
-![https://velog.velcdn.com/images%2Fjaeyunn_15%2Fpost%2F782b17f6-6009-4259-bbeb-4c05e9be663d%2Fimage.png](https://velog.velcdn.com/images%2Fjaeyunn_15%2Fpost%2F782b17f6-6009-4259-bbeb-4c05e9be663d%2Fimage.png)
 
 # IP주소란?
 
@@ -20,3 +19,4 @@ IP주소는 12자리임으로 외우기 힘들다 그렇기 때문에 IP주소�
 ## 도메인 네임 > IP주소
 
 도메인 네임은 컴퓨터가 이해할 수 없음으로 도메인 네임을 IP주소로 변환하는 과정이 필요하다. 이때 도메인 네임과 해당하는 IP주소를 저장하고 있는 데이터베이스를 DNS라고 한다. 도메인네임을 입력하면 DNS를 이용해서 IP주소를 받을 수 있다
+`;

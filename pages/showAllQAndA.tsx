@@ -1,9 +1,11 @@
 import { useState, ReactNode } from "react";
+import ReactMarkdown from "react-markdown";
 import { qAndAData } from "../qAndAData";
 
 import {
   showAllQAndABox,
   qAndABox,
+  answerStyle,
   lineColor,
   flexCenter,
   baseListStyle,
@@ -42,7 +44,7 @@ export default function ShowAllQAndA() {
           <li className={qAndABox} key={answer}>
             <div>{question}</div>
             <hr className={lineColor} />
-            <div>{answer}</div>
+            <ReactMarkdown className={answerStyle}>{answer}</ReactMarkdown>
           </li>
         )}
       />

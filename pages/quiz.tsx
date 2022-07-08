@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 
 import Button from "../components/Button/Button";
-import { quizBox, qAndACard, buttonBox } from "../styles/quiz.css";
+import ReactMarkdown from "react-markdown";
+import { quizBox, qAndACard, buttonBox, markUpStyle } from "../styles/quiz.css";
 import { qAndAData } from "../qAndAData";
 import { checkStorage } from "../utils/localStorage/checkStorage";
 
@@ -60,7 +61,9 @@ export default function Quiz() {
     <div className={quizBox}>
       <article className={qAndACard}>
         {!showAnswer && <p>{question}</p>}
-        {!!showAnswer && <p>{answer}</p>}
+        {!!showAnswer && (
+          <ReactMarkdown className={markUpStyle}>{answer}</ReactMarkdown>
+        )}
       </article>
       <div className={buttonBox}>
         <Button size="md" onClick={handleToggle}>
