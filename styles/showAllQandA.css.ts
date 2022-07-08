@@ -33,3 +33,11 @@ export const qAndABox = style({
 export const lineColor = style({
   borderColor: vars.colors.color3,
 });
+
+export const answerStyle = style({
+  overflow: "scroll",
+  height: "50vh",
+  "::-webkit-scrollbar": {
+    display: "none",
+  },
+});

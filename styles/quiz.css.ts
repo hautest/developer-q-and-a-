@@ -30,3 +30,13 @@ export const buttonBox = style({
   rowGap: "10px",
   columnGap: "5px",
 });
+
+export const markUpStyle = style({
+  height: "100%",
+  width: "100%",
+  wordBreak: "break-word",
+  overflow: "scroll",
+  "::-webkit-scrollbar": {
+    display: "none",
+  },
+});
