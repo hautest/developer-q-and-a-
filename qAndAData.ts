@@ -1,10 +1,9 @@
-import { answer4 } from "./answers";
+import { answer4, answer1 } from "./answers";
 
 export const qAndAData = [
   {
     question: "브라우저의 렌더링 과정은 ?",
-    answer:
-      "HTML,CSS parsing => Render tree 생성 => Layout => Paint => Composite(합성) 과정을 통해서 렌더링 된다. parsing이란 문자열을 의미 있는 토큰으로 분해하여 토큰 간의 위계 관계를 분석해 구조를 결정하는것을 말한다. HTML parsing을 통해서 DOM tree를 만들고 CSS parsing을 통해서 CSSOM tree를 만든다. DOM tree와 CSSOM tree가 결합하여 Render tree를 생성한다. Layout에서 각 요소들의 위치, 크기를 찾는다. Paint에서 Render tree를 순회하며 레이어를 만들고 레이어의 배경, 테두리, 그려지는 순서, 레이어간의 순서등을 기록한다. Compositing에서 각 레이어를 분리해 화면의 픽셀로 변환시킨뒤 브라우저의 페이지의 크기, 뷰포트에 맞게 합성해서 화면에 나타낸다.",
+    answer: answer1,
     id: 0,
   },
   {
