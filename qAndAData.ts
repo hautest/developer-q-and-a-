@@ -1,4 +1,4 @@
-import { answer4, answer1 } from "./answers";
+import { answer4, answer1, answer2 } from "./answers";
 
 export const qAndAData = [
   {
@@ -8,8 +8,7 @@ export const qAndAData = [
   },
   {
     question: "Reflow, Repaint는 무엇이며 최적화 하는 방법은 ?",
-    answer:
-      "Reflow는 생성된 DOM노드에 레이아웃 수치 변경시에 영향 받는 모든 노드 수치를 계산하여 Render tree를 재생성하는 과정을 말한다. Repaint는 Reflow과정이 끝난뒤에 재생성된 Render tree를 다시 그리는 과정을 말한다. (꼭 Reflow가 일어나야 Repaint가 일어나는것은 아니며 background-color, vusubility 등 layout 수치의 변화가 없을때에는 Reflow는 실행되지 않고 Repaint만 실행된다.) Reflow는 페이지 초기 렌더링, 노드의 추가와 제거, 요소의 위치와 크기 변경, 폰트 변경, 이미지 변경등에서 발생되며 최적화하는 방법으로는 스타일을 변경할 경우 가장 하위 노드의 스타일을 변경하고(Reflow가 일어나는 범위가 작아짐) inline스타일,CSS표현식을 지양한다. 그리고 애니메이션이 있는경우 애니메이션의 position을 fixed or abosolute로 지정한다. display: none을 활용한다",
+    answer: answer2,
     id: 1,
   },
   {
