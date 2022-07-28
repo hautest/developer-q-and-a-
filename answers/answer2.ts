@@ -28,4 +28,5 @@ Reflow과정이 끝난 후 재생성된 렌더 트리를 다시 그리는 과정
 2. inline 스타일을 지양한다(inline스타일은 HTML이 parsing되는 시점에 바로 layout에 영향을 미치기 때문에 추가적인 reflow를 발생시킨다)
 3. 애니메이션이 있는 element라면 position을 fixed or absolute로 지정한다(애니메이션 효과는 많은 Reflow를 발생을 시킨다.  position을 fixed or absolute로 지정하게되면 애니메이션을 발생하는 노드를 전체에서 따로 분류하여서 해당 노드만 Reflow가 발생한다)
 4. CSS표현식을 지양한다(Reflow가 발생할때 마다 자바스크립트 표현식이 다시 계산이 된다)
-5. display: none을 활용(Render tree가 생성될때 제외가 되기 때문에 Reflow비용을 줄일 수 있다)`;
+5. display: none을 활용(Render tree가 생성될때 제외가 되기 때문에 Reflow비용을 줄일 수 있다)`; 
+ 
