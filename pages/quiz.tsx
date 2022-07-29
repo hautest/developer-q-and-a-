@@ -70,7 +70,7 @@ export default function Quiz() {
           {showAnswer ? "문제보기" : "정답보기"}
         </Button>
         <Button size="md" onClick={handleCheck}>
-          {checked ? "체크해제하기" : "체크하기"}
+          {checked ? "체크해제" : "체크하기"}
         </Button>
         <Button size="md" onClick={handleBefore}>
           이전
