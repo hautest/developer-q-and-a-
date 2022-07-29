@@ -14,11 +14,12 @@ export const answer1 = `# 브라우저 렌더링 과정
 
 문자열을 의미 있는 토큰으로 분해하여 토큰 간의 위계 관계를 분석해 구조를 결정하는것이다.
 
+
 ### HTML parsing
 
 HTML데이터를 파싱을 하여서 DOM tree를 만든다.
 
-<script>태그를 만나면 parsing을 중단하고 자바스크립트 코드를 파싱한다.
+DOM tree를 만드는도중 <script>태그를 만나면 parsing을 중단하고 자바스크립트 코드를 파싱한다.
 
 ### CSS parsing
 
@@ -30,15 +31,18 @@ DOM : HTML를 조작할 수 있게 도와준다.
 
 CSSOM : 자바스크립트에서 CSS를 조작할 수 있게 해주는 API집합이다.
 
+
 ## 2.Render Tree 생성
 
 Render tree는 DOM tree와 CSSOM tree가 결합되어 생성된다. 
 
 이떄 display : none처럼 레이아웃에서 영역을 차지하고 있지 않는 것들은 tree에서 생략된다.
 
+
 ## 3.Layout
 
 각 요소들의 상대적인 위치, 크기를 찾는 과정이다.
+
 
 ## 4.Paint
 
