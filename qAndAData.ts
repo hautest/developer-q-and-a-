@@ -36,4 +36,9 @@ export const qAndAData = [
     answer: answer.answer7,
     id: 6,
   },
+  {
+    question: "Promise란?",
+    answer: answer.answer8,
+    id: 6,
+  },
 ];
