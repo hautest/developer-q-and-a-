@@ -37,8 +37,13 @@ export const qAndAData = [
     id: 6,
   },
   {
-    question: "Promise란?",
+    question: "Promise란 ?",
     answer: answer.answer8,
-    id: 6,
+    id: 7,
+  },
+  {
+    question: "Hoisting이란 ?",
+    answer: answer.answer8,
+    id: 8,
   },
 ];
