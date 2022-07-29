@@ -3,8 +3,8 @@ import { vars } from "../../styles/theme.css";
 
 export const globalLayoutStyle = style({
   minWidth: "375px",
-  minHeight: "100vh",
   maxWidth: "420px",
+  height: "100%",
   backgroundColor: vars.colors.color1,
   margin: "0 auto",
 });
@@ -13,13 +13,14 @@ export const navBox = style({
   display: "flex",
   justifyContent: "space-between",
   backgroundColor: vars.colors.color4,
-  height: "5vh",
+  height: "10%",
 });
 
 export const childrenBox = style({
-  minHeight: "95vh",
+  margin: "0",
   display: "flex",
   justifyContent: "center",
+  minHeight: "90%",
   alignItems: "center",
 });
 

@@ -4,9 +4,9 @@ export const homeStyle = style({
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
+  height: "100%",
   gap: "30px",
   alignItems: "center",
-  height: "100%",
 });
 
 export const titleStyle = style({

@@ -3,7 +3,7 @@ import { fontFace, globalStyle } from "@vanilla-extract/css";
 globalStyle("body, button", {
   backgroundColor: "black",
   margin: "0",
-  fontFamily: "'Nanum Pen Script', cursive",
+  fontFamily: "OTWelcomeRA",
   fontSize: "20px",
 });
 

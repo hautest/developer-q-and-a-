@@ -7,6 +7,7 @@ const baseStyle = style({
   padding: vars.spacing.sm,
   border: "0",
   cursor: "pointer",
+  color: vars.colors.black,
   borderRadius: "20px",
   ":hover": {
     backgroundColor: vars.colors.color3,

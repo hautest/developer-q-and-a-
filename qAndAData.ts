@@ -32,7 +32,7 @@ export const qAndAData = [
     id: 5,
   },
   {
-    question: "1233",
+    question: "이벤트 버블링, 캡쳐링, 위임이란 ?",
     answer: answer.answer7,
     id: 6,
   },

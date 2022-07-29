@@ -18,8 +18,8 @@ export const baseListStyle = style({
 export const showAllQAndABox = style([
   flexCenter,
   {
-    height: "100%",
     marginTop: "10%",
+    backgroundColor: vars.colors.color1,
   },
 ]);
 
