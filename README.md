@@ -1,35 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Developer Q&A
 
-## Getting Started
+# 만든 이유
 
-First, run the development server:
+프론트엔드 전반적인 지식이 부족하다고 느껴 공부하던 도중 개념들을 한 번에 정리해서 Q&A 형태로 만들어서 밖에서 이동할 때 모바일로 공부하면 좋을 거 같다는 생각을 하게 되어 만들었습니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+# 사용 기술
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+NextJs, Vanilla-extract, React, React-markdown
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+# 구현 기능
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Q&A기능
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+모르는 것을 체크해서 따로 모아서 볼 수 있습니다.
 
-## Learn More
+체크 한 것들은 로컬 스토리지에 저장하여 불러옵니다.
 
-To learn more about Next.js, take a look at the following resources:
+### 마크 다운 언어 사용
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# developer-q-and-a-
+마크 다운 언어를 리액트에 적용할 수 있는 라이브러리를 사용하여 답을 마크다운 언어로 표현하였습니다
