@@ -43,7 +43,7 @@ export const qAndAData = [
   },
   {
     question: "Hoisting이란 ?",
-    answer: answer.answer8,
+    answer: answer.answer9,
     id: 8,
   },
 ];
