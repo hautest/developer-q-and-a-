@@ -46,4 +46,39 @@ export const qAndAData = [
     answer: answer.answer8,
     id: 8,
   },
+  {
+    question: "함수 선언문, 함수 표현식, 화살표 함수란 ?",
+    answer: answer.answer10,
+    id: 9,
+  },
+  {
+    question: "쿠키, 세션이란 ?",
+    answer: answer.answer11,
+    id: 10,
+  },
+  {
+    question: "CORS란 ?",
+    answer: answer.answer12,
+    id: 11,
+  },
+  {
+    question: "실행컨텍스트란?",
+    answer: answer.answer13,
+    id: 12,
+  },
+  {
+    question: "클로저란 ?",
+    answer: answer.answer12,
+    id: 13,
+  },
+  {
+    question: "변수타입이란 ?",
+    answer: answer.answer13,
+    id: 14,
+  },
+  {
+    question: "React가 무엇이며 왜 사용할까 ?",
+    answer: answer.answer14,
+    id: 15,
+  },
 ];
