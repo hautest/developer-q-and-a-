@@ -20,6 +20,7 @@ export const childrenBox = style({
   margin: "0",
   display: "flex",
   justifyContent: "center",
+  width: "100%",
   minHeight: "90%",
   alignItems: "center",
 });
