@@ -6,6 +6,7 @@ export const flexCenter = style({
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
+  width: "100%",
   alignItems: "center",
   gap: "30px",
 });
@@ -18,6 +19,7 @@ export const baseListStyle = style({
 export const showAllQAndABox = style([
   flexCenter,
   {
+    width: "100%",
     marginTop: "10%",
     backgroundColor: vars.colors.color1,
   },
