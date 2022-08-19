@@ -68,17 +68,27 @@ export const qAndAData = [
   },
   {
     question: "클로저란 ?",
-    answer: answer.answer12,
+    answer: answer.answer14,
     id: 13,
   },
   {
     question: "변수타입이란 ?",
-    answer: answer.answer13,
+    answer: answer.answer15,
     id: 14,
   },
   {
     question: "React가 무엇이며 왜 사용할까 ?",
-    answer: answer.answer14,
+    answer: answer.answer16,
     id: 15,
+  },
+  {
+    question: "React의 라이프 사이클이란 ?",
+    answer: answer.answer17,
+    id: 16,
+  },
+  {
+    question: "useMemo, useCallback, React.Memo란 ?",
+    answer: answer.answer18,
+    id: 17,
   },
 ];
