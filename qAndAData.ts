@@ -91,4 +91,9 @@ export const qAndAData = [
     answer: answer.answer18,
     id: 17,
   },
+  {
+    question: "반복문에서 key를 사용하는 이유는 ?",
+    answer: answer.answer19,
+    id: 18,
+  },
 ];
