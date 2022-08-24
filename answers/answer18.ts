@@ -1,4 +1,4 @@
-export const answr18 = `# useCallback, useMemo, React.Memo
+export const answer18 = `# useCallback, useMemo, React.Memo
 
 # Memoization
 
