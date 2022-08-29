@@ -96,4 +96,9 @@ export const qAndAData = [
     answer: answer.answer19,
     id: 18,
   },
+  {
+    question: "Webpack, Babel이란 ?",
+    answer: answer.answer20,
+    id: 19,
+  },
 ];
