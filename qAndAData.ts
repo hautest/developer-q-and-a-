@@ -101,4 +101,9 @@ export const qAndAData = [
     answer: answer.answer20,
     id: 19,
   },
+  {
+    question: "CSS에서 Position이란 ?",
+    answer: answer.answer21,
+    id: 20,
+  },
 ];
