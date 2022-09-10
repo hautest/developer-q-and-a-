@@ -18,3 +18,4 @@ export * from "./answer17";
 export * from "./answer18";
 export * from "./answer19";
 export * from "./answer20";
+export * from "./answer21";
