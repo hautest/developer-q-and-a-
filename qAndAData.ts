@@ -106,4 +106,9 @@ export const qAndAData = [
     answer: answer.answer21,
     id: 20,
   },
+  {
+    question: "head tag란 ?",
+    answer: answer.answer22,
+    id: 21,
+  },
 ];
