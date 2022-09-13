@@ -22,6 +22,6 @@ NextJs, Vanilla-extract, React, React-markdown
 
 <aside>
 💡 깃허브 : https://github.com/hautest/developer-q-and-a-
-도메인 : [https://developer-q-and-a.vercel.app/](https://developer-q-and-a.vercel.app/)
+도메인 : https://developer-q-and-a.vercel.app/
 
 </aside>
