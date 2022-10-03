@@ -111,4 +111,9 @@ export const qAndAData = [
     answer: answer.answer22,
     id: 21,
   },
+  {
+    question: "Typescript의 장단점이란 ?",
+    answer: answer.answer23,
+    id: 22,
+  },
 ];
